@@ -1,6 +1,8 @@
 name: Damage Calculation Test
 
 on:
+  workflow_dispatch:
+    branches: [ main-2022 ]
   push:
     branches: [ main-2022 ]
     
