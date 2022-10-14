@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/bin/node /opt/yarn-v1.22.18/bin/yarn.js add jest-junit:10.0.0 --dev
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.14.2
+
+Platform: 
+  linux arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/jest-junit:10.0.0: Not found
+      at Request.params.callback [as _callback] (/opt/yarn-v1.22.18/lib/cli.js:66138:18)
+      at Request.self.callback (/opt/yarn-v1.22.18/lib/cli.js:140883:22)
+      at Request.emit (node:events:526:28)
+      at Request.<anonymous> (/opt/yarn-v1.22.18/lib/cli.js:141855:10)
+      at Request.emit (node:events:526:28)
+      at IncomingMessage.<anonymous> (/opt/yarn-v1.22.18/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:645:28)
+      at IncomingMessage.emit (node:events:538:35)
+      at endReadableNT (node:internal/streams/readable:1345:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "damage-calc",
+    "version": "1.0.0",
+    "description": "caliculator of damage",
+    "main": "index.js",
+    "author": "",
+    "scripts": {
+      "test": "jest"
+    },
+    "jest": {
+      "reporters": ["default", "jest-junit"]
+    },
+    "license": "ISC",
+    "devDependencies": {
+      "jest": "27.5.1",
+      "jest-junit": "10.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
